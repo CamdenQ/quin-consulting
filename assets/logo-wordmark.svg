@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Quin Consulting wordmark">
+  <defs>
+    <style>
+      .ink{fill:#0b0a16}
+      .accent{fill:#e51737}
+      .q-stroke{stroke:#0b0a16;stroke-width:45;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      /* Use only locally available fonts for reliable preview */
+      .brand{font-family:'SF Pro Rounded','Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+    </style>
+  </defs>
+  <rect width="900" height="260" fill="none"/>
+  <!-- Left: vector Q with chat-bubble tail -->
+  <g transform="translate(30,10)">
+    <circle cx="100" cy="120" r="90" class="q-stroke"/>
+    <path class="ink" d="M170 180 h45 a14 14 0 0 1 14 14 v46 a14 14 0 0 1-14 14 h-72 a14 14 0 0 1-14-14 v-12 a168 168 0 0 0 31-48z"/>
+  </g>
+  <!-- Right: stacked wordmark aligned to the Q centerline -->
+  <g transform="translate(260,0)">
+    <text x="0" y="120" class="brand accent" font-size="86" font-weight="700">Quin</text>
+    <text x="0" y="200" class="brand ink" font-size="86" font-weight="600">Consulting</text>
+  </g>
+</svg>
+
+

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-label="Quin Consulting logo">
+  <defs>
+    <style>
+      .ink{fill:#0b0a16}
+      .stroke-ink{stroke:#0b0a16;stroke-width:120;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .accent{fill:#e51737}
+      .clear{fill:#ffffff}
+    </style>
+    <!-- Build a mask from the wordmark so text cuts through the Q -->
+    <mask id="cut-text" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="720" height="540" fill="#fff"/>
+      <!-- Centered knockout band: width ~ Q*1.02 (388px), with 2% padding around wordmark -->
+      <rect x="162" y="254" width="396" height="92" rx="14" ry="14" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- Background clear for export safety -->
+  <rect width="720" height="540" fill="none"/>
+
+  <!-- Stylized Q (chat bubble) cut by text mask -->
+  <g mask="url(#cut-text)">
+    <!-- Thick ring for the Q -->
+    <circle cx="360" cy="270" r="190" class="stroke-ink"/>
+    <!-- Chat bubble tail -->
+    <path class="ink" d="M470 380 h74 a18 18 0 0 1 18 18 v62 a18 18 0 0 1-18 18 h-112 a18 18 0 0 1-18-18 v-16 a220 220 0 0 0 56-64z"/>
+  </g>
+
+  <!-- Wordmark on top so colors show while the Q is cut underneath -->
+  <g>
+    <!-- Constrain wordmark to ~388px to be ~2% wider than 380px Q diameter; use slightly smaller font-size to avoid squish -->
+    <text x="360" y="300" text-anchor="middle" font-family="'SF Pro Rounded', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="84" letter-spacing="1" textLength="388" lengthAdjust="spacingAndGlyphs">
+      <tspan class="accent" font-weight="700">Quin </tspan>
+      <tspan class="ink" font-weight="600">Consulting</tspan>
+    </text>
+  </g>
+</svg>
+
+

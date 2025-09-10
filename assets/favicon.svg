@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="QC">
+  <defs>
+    <style>
+      .ink{fill:#0b0a16}
+      .accent{fill:#e51737}
+    </style>
+  </defs>
+  <rect width="64" height="64" fill="none"/>
+  <circle class="ink" cx="32" cy="32" r="28"/>
+  <rect class="ink" x="40" y="40" width="10" height="8" rx="2"/>
+  <text x="10" y="40" class="accent" font-family="'SF Pro Rounded', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Quin</text>
+</svg>
+
+
