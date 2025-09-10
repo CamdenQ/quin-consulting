@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap helps search engines discover pages
+Sitemap: https://quin.cc/sitemap.xml
+
