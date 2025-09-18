@@ -1,6 +1,6 @@
 /* Base reset */
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
 html { scroll-behavior: smooth; }
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color: #0b1220; background: #f7f9fc; line-height: 1.6; }
 
@@ -114,11 +114,12 @@ ul { padding-left: 1.1rem; }
   .cards { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
   .quotes { grid-template-columns: 1fr; }
+  .nav-toggle { display: inline-flex; }
+  .site-nav { position: fixed; inset: 60px 0 auto 0; background: rgba(247,249,252,0.96); padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); transform: translateY(calc(-100% - 60px)); transition: transform 0.2s ease; }
+  .site-nav.open { transform: translateY(0); }
+  .site-nav ul { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 }
 
 @media (max-width: 760px) {
-  .nav-toggle { display: inline-flex; }
-  .site-nav { position: fixed; inset: 60px 0 auto 0; background: rgba(247,249,252,0.96); padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); transform: translateY(-120%); transition: transform 0.2s ease; }
-  .site-nav.open { transform: translateY(0); }
-  .site-nav ul { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .site-header { position: static !important; }
 }
