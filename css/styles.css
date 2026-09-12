@@ -66,6 +66,7 @@ ul { padding-left: 1.1rem; }
 /* removed hero wordmark image */
 .trust-bullets { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; list-style: none; padding: 0; margin: 0.75rem 0 0; color: var(--muted); }
 .hero-media { display: grid; place-items: start; }
+.hero-services-image { width: min(100%, 520px); height: clamp(220px, 28vw, 330px); display: block; object-fit: contain; border-radius: 16px; box-shadow: var(--shadow); }
 .hero-logo { width: min(420px, 80%); height: auto; filter: drop-shadow(0 10px 24px rgba(2,6,23,0.18)); margin-bottom: 0.75rem; }
 .glass-card { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 1rem; border-radius: 16px; background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6)); border: 1px solid rgba(255,255,255,0.6); box-shadow: var(--shadow); }
 .stat { display: grid; gap: 0.25rem; text-align: center; }
